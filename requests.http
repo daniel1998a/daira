@@ -1,0 +1,30 @@
+GET  http://localhost:8000/dog/buscar/1 HTTP/1.1
+
+###
+GET  http://localhost:8000/dog/buscar HTTP/1.1
+
+###
+POST http://localhost:8000/dog/crear HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "zoco",
+    "edad": 8,
+    "razar": "pug",
+}
+
+###
+
+PUT http://localhost:8000/dog/actualizar/3 HTTP/1.1
+Content-Type: application/json
+
+{
+   "nombre":"meko",
+    "edad":10,
+    "raza":"row"
+}
+
+
+###
+DELETE http://localhost:dog/perros/eliminar/2 HTTP/1.1
+
